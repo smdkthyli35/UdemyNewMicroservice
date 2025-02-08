@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{86B23A87-18E4-4205-A2CE-A0E3EB0068D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{6B23595F-688D-43BD-A1B6-5A22A2A2F33E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "catalog", "catalog", "{54741B7F-C45A-4F2F-ACBB-BA52FEB68441}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyNewMicroservice.Catalog.Api", "UdemyNewMicroservice.Catalog.Api\UdemyNewMicroservice.Catalog.Api.csproj", "{ED199EF1-1F3E-4EC5-B26A-B7401330A964}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5B09ED75-37B7-4D83-A8CD-7FF012540598}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED199EF1-1F3E-4EC5-B26A-B7401330A964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED199EF1-1F3E-4EC5-B26A-B7401330A964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED199EF1-1F3E-4EC5-B26A-B7401330A964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED199EF1-1F3E-4EC5-B26A-B7401330A964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B09ED75-37B7-4D83-A8CD-7FF012540598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B09ED75-37B7-4D83-A8CD-7FF012540598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B09ED75-37B7-4D83-A8CD-7FF012540598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B09ED75-37B7-4D83-A8CD-7FF012540598}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B23595F-688D-43BD-A1B6-5A22A2A2F33E} = {86B23A87-18E4-4205-A2CE-A0E3EB0068D3}
+		{54741B7F-C45A-4F2F-ACBB-BA52FEB68441} = {6B23595F-688D-43BD-A1B6-5A22A2A2F33E}
+		{ED199EF1-1F3E-4EC5-B26A-B7401330A964} = {54741B7F-C45A-4F2F-ACBB-BA52FEB68441}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6F3571E-BEC4-46D2-9B3E-40B306A5BFEF}
+	EndGlobalSection
+EndGlobal
