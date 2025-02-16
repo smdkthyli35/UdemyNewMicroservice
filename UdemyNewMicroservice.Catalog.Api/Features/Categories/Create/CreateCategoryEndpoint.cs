@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using UdemyNewMicroservice.Shared.Extensions;
+using UdemyNewMicroservice.Shared.Filters;
 
 namespace UdemyNewMicroservice.Catalog.Api.Features.Categories.Create
 {
@@ -9,7 +10,8 @@ namespace UdemyNewMicroservice.Catalog.Api.Features.Categories.Create
         {
             group.MapPost("/", 
                 async (CreateCategoryCommand command, IMediator mediator) => 
-                    (await mediator.Send(command)).ToGenericResult());
+                    (await mediator.Send(command)).ToGenericResult())
+                .AddEndpointFilter<ValidationFilter<CreateCategoryCommand>>();
 
             return group;
         }
